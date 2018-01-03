@@ -1,0 +1,46 @@
+.__fraction-loader {
+  font-family: 'Helvetica', 'Roboto', 'Arial', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  width: 70px;
+  height: 36px;
+  line-height: 36px;
+  background-color: #404040;
+  border-radius: 4px;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  margin: -16px 0 0 -35px;
+  overflow: hidden;
+}
+
+.__fraction-loader > div {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  text-shadow: 0 2px 1px rgba(0,0,0, .6);
+}
+
+.__fraction-loader > :nth-child(1) {
+  text-align: right;
+  width: 20px;
+  margin-right: 4px;
+}
+
+.__fraction-loader > :nth-child(3) {
+  text-align: left;
+  width: 20px;
+  margin-left: 4px;
+}
+
+.__fraction-loader > :nth-child(4) {
+  background-color: #1c849f;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  z-index: 0;
+  transition: width 200ms ease;
+}
